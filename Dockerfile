@@ -5,7 +5,7 @@ RUN pip install xlrd
 RUN mkdir /app
 RUN chown 1001 /app
 USER 1001
-RUN cd /app; git clone https://github.optum.com/OptumRxAutomation/DockerPythonTest.git
+RUN cd /app; git clone https://github.com/kshitijb90/DockerPythonTest.git
 WORKDIR /app/DockerPythonTest
 ENV FM_APP=FMtest.py
 ENV FM_ENV=development
